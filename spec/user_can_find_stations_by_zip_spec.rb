@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "User can find stations by zip code" do
   scenario "they see the 10 closest stations within 6 miles sorted by distance" do
     visit "/"
-    fill_in "Zipcode", with: "80203"
+    fill_in text_field_tag, with: "80203"
     click_on "Locate"
     expect(current_path).to eq "/search?zip=80203"
     expect(page).to have_content
