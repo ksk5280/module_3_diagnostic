@@ -12,6 +12,8 @@ gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
 gem "capybara"
+gem "figaro"
+gem "faraday"
 
 group :development, :test do
   gem 'pry'
